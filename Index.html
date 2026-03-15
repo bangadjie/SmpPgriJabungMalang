@@ -1,133 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMP PGRI Malang - Website Resmi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styling.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styling.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
     <header>
-        <div class="top-bar"></div>
-        <nav class="navbar">
-            <div class="logo-box">LOGO</div>
-            <ul class="nav-links">
-                <li><a href="Index.html">Beranda</a></li>
-                <li><a href="TentangKami.html">Tentang Kami</a></li>
-                <li><a href="#">Guru</a></li>
-                <li><a href="Donasi.html">Donasi</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
-        </nav>
+      <div class="top-bar"></div>
+      <nav class="navbar">
+        <a
+          href="Index.html"
+          class="logo-box"
+          style="text-decoration: none; color: inherit"
+          >LOGO</a
+        >
+        <ul class="nav-links">
+          <li><a href="Index.html" class="active">Beranda</a></li>
+          <li><a href="TentangKami.html">Tentang Kami</a></li>
+          <li><a href="Guru.html">Guru</a></li>
+          <li><a href="Donasi.html">Donasi</a></li>
+          <li><a href="Kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content" data-aos="fade-up">
             <span class="tagline">LOREM IPSUM HAHAHIHI</span>
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-            <p>LOREM IPSUM HAHAHIHI</p>
+            <p style="letter-spacing: 2px; margin-bottom: 20px;">LOREM IPSUM HAHAHIHI</p>
+            
             <button class="btn-white">LOREM IPSUM</button>
         </div>
-        <div class="slider-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        </div>
-        <div class="wa-float">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
         </div>
     </section>
 
     <section class="section-container">
-        <div class="section-header">
-            <div>
-                <span class="tagline-yellow">LOREM IPSUM HAHAHIHI</span>
-                <h2>Lorem ipsum dolor sit amet, <span class="highlight">adipiscing elit.</span></h2>
-            </div>
-            <p class="header-desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+      <div class="section-header">
+        <div>
+          <span class="tagline-yellow">LOREM IPSUM HAHAHIHI</span>
+          <h2>
+            Lorem ipsum dolor sit amet,
+            <span class="highlight">adipiscing elit.</span>
+          </h2>
         </div>
+        <p class="header-desc">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        </p>
+      </div>
 
-        <div class="cards-wrapper">
-            <div class="arrow left">‹</div>
-            <div class="card" data-aos="fade-up" data-aos-delay="100">
-                <div class="image-placeholder">✕</div>
-                <div class="card-body">
-                    <h3 class="highlight">Graphic Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh</p>
-                </div>
-            </div>
-            <div class="card active-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="image-placeholder">✕</div>
-                <div class="card-body">
-                    <h3 class="highlight">Graphic Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh</p>
-                </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="500">
-                <div class="image-placeholder">✕</div>
-                <div class="card-body">
-                    <h3 class="highlight">Graphic Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh</p>
-                </div>
-            </div>
-            <div class="arrow right">›</div>
+      <div class="cards-wrapper">
+        <div class="arrow left">‹</div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="image-placeholder">✕</div>
+          <div class="card-body">
+            <h3 class="highlight">Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+              nibh
+            </p>
+          </div>
         </div>
+        <div class="card active-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="image-placeholder">✕</div>
+          <div class="card-body">
+            <h3 class="highlight">Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+              nibh
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+          <div class="image-placeholder">✕</div>
+          <div class="card-body">
+            <h3 class="highlight">Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+              nibh
+            </p>
+          </div>
+        </div>
+        <div class="arrow right">›</div>
+      </div>
     </section>
 
     <section class="about-section">
-        <div class="about-content" data-aos="fade-right">
-            <span class="tagline-yellow">LOREM IPSUM HAHAHIHI</span>
-            <h2>Tentang Kami</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button class="btn-yellow">LOREM IPSUM</button>
-        </div>
-        <div class="about-image-box" data-aos="fade-left">
-            <div class="image-placeholder big">✕</div>
-        </div>
+      <div class="about-content" data-aos="fade-right">
+        <span class="tagline-yellow">LOREM IPSUM HAHAHIHI</span>
+        <h2>Tentang Kami</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="btn-yellow">LOREM IPSUM</button>
+      </div>
+      <div class="about-image-box" data-aos="fade-left">
+        <div class="image-placeholder big">✕</div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-top" data-aos="fade-up">
-            <div class="footer-brand">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="footer-links">
-                <div class="link-col">
-                    <h4>Services</h4>
-                    <a href="#">Email Marketing</a>
-                    <a href="#">Campaigns</a>
-                    <a href="#">Branding</a>
-                </div>
-                <div class="link-col">
-                    <h4>About</h4>
-                    <a href="#">Our Story</a>
-                    <a href="#">Benefits</a>
-                    <a href="#">Team</a>
-                </div>
-                <div class="link-col">
-                    <h4>Follow Us</h4>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
-                </div>
-            </div>
+      <div class="footer-top" data-aos="fade-up">
+        <div class="footer-brand">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>Copyright © 2020. LogoIpsum. All rights reserved.</p>
-            <div class="legal">
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
-            </div>
+        <div class="footer-links">
+          <div class="link-col">
+            <h4>Services</h4>
+            <a href="#">Email Marketing</a>
+            <a href="#">Campaigns</a>
+            <a href="#">Branding</a>
+          </div>
+          <div class="link-col">
+            <h4>About</h4>
+            <a href="#">Our Story</a>
+            <a href="#">Benefits</a>
+            <a href="#">Team</a>
+          </div>
+          <div class="link-col">
+            <h4>Follow Us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2020. LogoIpsum. All rights reserved.</p>
+        <div class="legal">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
     </footer>
 
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // durasi animasi (1 detik)
-    once: true,     // animasi hanya jalan sekali saat scroll pertama
-  });
-</script>
+    <!-- Animasi Header -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        // Jika layar di-scroll lebih dari 50px ke bawah, aktifkan mode 'scrolled'
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          // Jika kembali ke paling atas, hapus mode 'scrolled'
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // durasi animasi (1 detik)
+      once: true, // animasi hanya jalan sekali saat scroll pertama
+    });
+  </script>
 </html>

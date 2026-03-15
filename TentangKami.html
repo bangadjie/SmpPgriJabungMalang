@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tentang Kami</title>
+    <title>Tentang Kami - SMP PGRI Malang</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -15,16 +15,17 @@
     <header>
       <div class="top-bar"></div>
       <nav class="navbar">
-        <div class="logo-box">LOGO</div>
+        <a href="Index.html" class="logo-box" style="text-decoration: none; color: inherit;">LOGO</a>
         <ul class="nav-links">
           <li><a href="Index.html">Beranda</a></li>
-          <li><a href="TentangKami.html">Tentang Kami</a></li>
-          <li><a href="#">Guru</a></li>
+          <li><a href="TentangKami.html" class="active">Tentang Kami</a></li>
+          <li><a href="Guru.html">Guru</a></li>
           <li><a href="Donasi.html">Donasi</a></li>
-          <li><a href="#">Kontak</a></li>
+          <li><a href="Kontak.html">Kontak</a></li>
         </ul>
       </nav>
     </header>
+
     <section class="about-hero" data-aos="fade-in">
       <div class="container">
         <span class="tagline-yellow">PROFIL SEKOLAH</span>
@@ -37,7 +38,7 @@
       </div>
     </section>
 
-    <section class="vision-mission" padding="80px 10%">
+    <section class="vision-mission">
       <div class="grid-2" data-aos="fade-up">
         <div class="vision-box">
           <h3 class="highlight">Visi</h3>
@@ -60,29 +61,45 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p>Mendidik generasi cerdas dan berkarakter.</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-col">
+            <h4>Menu</h4>
+            <a href="TentangKami.html">Tentang Kami</a
+            ><a href="Guru.html">Guru</a>
+          </div>
+          <div class="link-col">
+            <h4>Kontak</h4>
+            <a href="Kontak.html">Hubungi Kami</a
+            ><a href="Donasi.html">Donasi</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>Copyright © 2026. SMP PGRI Malang.</p></div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <!-- Animasi Header -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        // Jika layar di-scroll lebih dari 50px ke bawah, aktifkan mode 'scrolled'
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          // Jika kembali ke paling atas, hapus mode 'scrolled'
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script> </body>
-    
-    <style>
-  /* Styling Progress Bar */
-  .progress-container {
-    background: #e0e0e0;
-    border-radius: 20px;
-    margin: 20px 0;
-    height: 25px;
-    overflow: hidden;
-  }
-
-  .progress-bar {
-    background: var(--yellow);
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 25px;
-    transition: width 1s ease-in-out;
-  }
-</style>
 </html>
-
