@@ -10,12 +10,45 @@
     />
     <link rel="stylesheet" href="styling.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styling.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <header>
-      <div class="top-bar"></div>
+      <div class="top-bar">
+        <!-- Bagian Kiri -->
+        <div class="top-left">
+          <!-- Tombol Bahasa -->
+          <div class="lang-toggle">
+            <a href="#" title="Bahasa Indonesia">🇮🇩 ID</a>
+            <span class="divider">|</span>
+            <a href="#" title="English">🇬🇧 EN</a>
+          </div>
+          <span class="slogan">"Lorem ipsum dolor sit amet"</span>
+        </div>
+
+        <!-- Ikon Sosial Media -->
+        <div class="top-right">
+          <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- logo -->
       <nav class="navbar">
-        <a href="Index.html" class="logo-box" style="text-decoration: none; color: inherit;">LOGO</a>
+        <a
+          href="Index.html"
+          class="logo-box"
+          style="text-decoration: none; color: inherit"
+          >LOGO</a>
+
+          <!-- Navigation Links -->
         <ul class="nav-links">
           <li><a href="Index.html">Beranda</a></li>
           <li><a href="TentangKami.html">Tentang Kami</a></li>
@@ -26,6 +59,7 @@
       </nav>
     </header>
 
+    <!-- Kontak -->
     <section class="contact-container">
       <div class="contact-info" data-aos="fade-right">
         <span class="tagline-yellow">HUBUNGI KAMI</span>
@@ -34,6 +68,7 @@
           Silakan hubungi kami atau isi formulir di bawah.
         </p>
 
+        <!-- Informasi Kontak -->
         <div class="info-item">
           <div class="info-icon">📍</div>
           <div class="info-text">
@@ -50,6 +85,7 @@
         </div>
       </div>
 
+      <!-- Form Kontak -->
       <div class="contact-form" data-aos="fade-left">
         <form action="#">
           <div class="form-group">
@@ -74,18 +110,8 @@
         </form>
       </div>
     </section>
-
-    <div class="map-section">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.28548028!2d112.5617424!3d-7.9784695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6282204413f21%3A0x3027a76352b20f0!2sMalang%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
-        width="100%"
-        height="100%"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </div>
-
+    
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-brand">
@@ -105,8 +131,21 @@
         </div>
       </div>
       <div class="footer-bottom"><p>Copyright © 2026. SMP PGRI Malang.</p></div>
+
+      <!-- Peta Lokasi -->
+    <div class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4435.740277359874!2d112.76353671106015!3d-7.892091192097862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62d4d067c6799%3A0xd0ff2c23ac7ebeb3!2sSMP%20PGRI%20Jabung!5e1!3m2!1sid!2sid!4v1773640077917!5m2!1sid!2sid"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
     </footer>
 
+    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 1000, once: true });

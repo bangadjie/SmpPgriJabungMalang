@@ -10,12 +10,44 @@
     />
     <link rel="stylesheet" href="styling.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styling.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <header>
-      <div class="top-bar"></div>
+    <div class="top-bar">
+        <!-- Bagian Kiri -->
+        <div class="top-left">
+          <!-- Tombol Bahasa -->
+          <div class="lang-toggle">
+            <a href="#" title="Bahasa Indonesia">🇮🇩 ID</a>
+            <span class="divider">|</span>
+            <a href="#" title="English">🇬🇧 EN</a>
+          </div>
+          <span class="slogan">"Lorem ipsum dolor sit amet"</span>
+        </div>
+
+        <!-- Ikon Sosial Media -->
+        <div class="top-right">
+          <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- logo -->
       <nav class="navbar">
-        <a href="Index.html" class="logo-box" style="text-decoration: none; color: inherit;">LOGO</a>
+        <a
+          href="Index.html"
+          class="logo-box"
+          style="text-decoration: none; color: inherit"
+          >LOGO</a>
+
+          <!-- Navigation Links -->
         <ul class="nav-links">
           <li><a href="Index.html">Beranda</a></li>
           <li><a href="TentangKami.html" class="active">Tentang Kami</a></li>
@@ -26,6 +58,7 @@
       </nav>
     </header>
 
+    <!-- Description -->
     <section class="about-hero" data-aos="fade-in">
       <div class="container">
         <span class="tagline-yellow">PROFIL SEKOLAH</span>
@@ -38,6 +71,7 @@
       </div>
     </section>
 
+    <!-- Visi & Misi -->
     <section class="vision-mission">
       <div class="grid-2" data-aos="fade-up">
         <div class="vision-box">
@@ -62,6 +96,69 @@
       </div>
     </section>
 
+    <!-- Berita & Artikel -->
+    <section class="news-section" data-aos="fade-up">
+      <div class="news-header" style="text-align: center; margin-bottom: 50px;">
+        <span class="tagline-yellow">UPDATE TERKINI</span>
+        <h2>Berita & Artikel Sekolah</h2>
+      </div>
+
+      <div class="news-grid-magazine">
+        <div class="news-highlight" data-aos="fade-right" data-aos-delay="100">
+          <div class="news-img-large" style="background-image: url('#');"></div>
+          <div class="news-content-large">
+            <span class="news-tag">PRESTASI IT</span>
+            <span class="news-date">16 Maret 2026</span>
+            <h3 class="news-title-large">Tim Robotik SMP PGRI Jabung Sukses Meraih Juara 1 Tingkat Nasional</h3>
+            <p class="news-excerpt">
+              Inovasi dan kerja keras terbayar lunas. Tim perwakilan sekolah kita berhasil mengalahkan puluhan sekolah lain dalam kompetisi merakit robot cerdas yang diadakan di Universitas ternama.
+            </p>
+            <a href="#" class="read-more">Baca Selengkapnya &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Berita (berita yang kecil) -->
+        <div class="news-sidebar" data-aos="fade-left" data-aos-delay="300">
+          
+          <div class="news-item-small">
+            <div class="news-img-small" style="background-image: url('#');"></div>
+            <div class="news-content-small">
+              <span class="news-date">10 Maret 2026</span>
+              <a href="#" class="news-title-small">Pelatihan Coding Dasar: Membangun Logika Siswa Sejak Dini</a>
+            </div>
+          </div>
+
+          <div class="news-item-small">
+            <div class="news-img-small" style="background-image: url('#');"></div>
+            <div class="news-content-small">
+              <span class="news-date">05 Maret 2026</span>
+              <a href="#" class="news-title-small">Kunjungan Industri ke Perusahaan Startup Teknologi</a>
+            </div>
+          </div>
+
+          <div class="news-item-small">
+            <div class="news-img-small" style="background-image: url('#');"></div>
+            <div class="news-content-small">
+              <span class="news-date">28 Februari 2026</span>
+              <a href="#" class="news-title-small">Kegiatan Jumat Sehat dan Bersih Lingkungan Sekolah</a>
+            </div>
+          </div>
+
+          <div class="news-item-small">
+            <div class="news-img-small" style="background-image: url('#');"></div>
+            <div class="news-content-small">
+              <span class="news-date">20 Februari 2026</span>
+              <a href="#" class="news-title-small">Siswa Ciptakan Aplikasi Daur Ulang Sampah Berbasis AI</a>
+            </div>
+          </div>
+
+          <a href="#" class="read-more-sidebar">Baca Berita Lainnya &rarr;</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-brand">
@@ -83,6 +180,7 @@
       <div class="footer-bottom"><p>Copyright © 2026. SMP PGRI Malang.</p></div>
     </footer>
 
+    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 1000, once: true });

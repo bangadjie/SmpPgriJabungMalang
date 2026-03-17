@@ -10,17 +10,45 @@
     />
     <link rel="stylesheet" href="styling.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styling.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <header>
-      <div class="top-bar"></div>
+      <div class="top-bar">
+        <!-- Bagian Kiri -->
+        <div class="top-left">
+          <!-- Tombol Bahasa -->
+          <div class="lang-toggle">
+            <a href="#" title="Bahasa Indonesia">🇮🇩 ID</a>
+            <span class="divider">|</span>
+            <a href="#" title="English">🇬🇧 EN</a>
+          </div>
+          <span class="slogan">"Lorem ipsum dolor sit amet"</span>
+        </div>
+
+        <!-- Ikon Sosial Media -->
+        <div class="top-right">
+          <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- logo -->
       <nav class="navbar">
         <a
           href="Index.html"
           class="logo-box"
           style="text-decoration: none; color: inherit"
-          >LOGO</a
-        >
+          >LOGO</a>
+
+          <!-- Navigation Links -->
         <ul class="nav-links">
           <li><a href="Index.html" class="active">Beranda</a></li>
           <li><a href="TentangKami.html">Tentang Kami</a></li>
@@ -31,6 +59,7 @@
       </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content" data-aos="fade-up">
             <span class="tagline">LOREM IPSUM HAHAHIHI</span>
@@ -62,6 +91,7 @@
         </p>
       </div>
 
+      <!-- Card Wrapper -->
       <div class="cards-wrapper">
         <div class="arrow left">‹</div>
         <div class="card" data-aos="fade-up" data-aos-delay="100">
@@ -98,18 +128,20 @@
       </div>
     </section>
 
+    <!-- Tentang Kami -->
     <section class="about-section">
       <div class="about-content" data-aos="fade-right">
         <span class="tagline-yellow">LOREM IPSUM HAHAHIHI</span>
         <h2>Tentang Kami</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="btn-yellow">LOREM IPSUM</button>
+        <a href="TentangKami.html" class="btn-yellow" style="display: inline-block; text-decoration: none;">lorem ipsum</a>
       </div>
       <div class="about-image-box" data-aos="fade-left">
         <div class="image-placeholder big">✕</div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-top" data-aos="fade-up">
         <div class="footer-brand">
@@ -164,6 +196,8 @@
       });
     </script>
   </body>
+
+  <!-- AOS Animation -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({

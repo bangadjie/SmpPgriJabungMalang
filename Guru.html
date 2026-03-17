@@ -10,12 +10,45 @@
     />
     <link rel="stylesheet" href="styling.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styling.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <header>
-      <div class="top-bar"></div>
+      <div class="top-bar">
+        <!-- Bagian Kiri -->
+        <div class="top-left">
+          <!-- Tombol Bahasa -->
+          <div class="lang-toggle">
+            <a href="#" title="Bahasa Indonesia">🇮🇩 ID</a>
+            <span class="divider">|</span>
+            <a href="#" title="English">🇬🇧 EN</a>
+          </div>
+          <span class="slogan">"Lorem ipsum dolor sit amet"</span>
+        </div>
+
+        <!-- Ikon Sosial Media -->
+        <div class="top-right">
+          <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- logo -->
       <nav class="navbar">
-        <a href="Index.html" class="logo-box" style="text-decoration: none; color: inherit;">LOGO</a>
+        <a
+          href="Index.html"
+          class="logo-box"
+          style="text-decoration: none; color: inherit"
+          >LOGO</a>
+          
+          <!-- Navigation Links -->
         <ul class="nav-links">
           <li><a href="Index.html">Beranda</a></li>
           <li><a href="TentangKami.html">Tentang Kami</a></li>
@@ -26,6 +59,7 @@
       </nav>
     </header>
 
+    <!-- grid kepala sekolah -->
     <section class="teacher-section">
         <div data-aos="fade-up">
             <span class="tagline-yellow">TENAGA PENDIDIK</span>
@@ -44,6 +78,7 @@
             </div>
         </div>
 
+        <!-- Grid Guru -->
         <div class="teacher-grid">
             <div class="teacher-card" data-aos="fade-up" data-aos-delay="200">
                 <!-- Image Placeholder -->
@@ -83,6 +118,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-brand">
@@ -104,6 +140,7 @@
       <div class="footer-bottom"><p>Copyright © 2026. SMP PGRI Malang.</p></div>
     </footer>
 
+    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 1000, once: true });
