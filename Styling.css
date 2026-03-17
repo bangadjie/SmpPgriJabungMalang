@@ -932,11 +932,25 @@ header.scrolled .logo-box {
   box-sizing: border-box;
 }
 
+/* --- PETA GOOGLE (MAPS) --- */
 .map-section {
   width: 100%;
-  height: 400px;
-  filter: grayscale(100%) invert(90%) contrast(90%);
+  height: 250px;
   display: flex;
+  overflow: hidden;
+  border-top: 4px solid var(--yellow); 
+  background-color: #eee;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(80%) opacity(0.8);
+  transition: all 0.6s ease-in-out; 
+}
+
+.map-section:hover iframe {
+  filter: grayscale(0%) opacity(1);
 }
 
 /* =========================================
@@ -947,4 +961,21 @@ header.scrolled .logo-box {
   .grid-2 {
     grid-template-columns: 1fr;
   }
+}
+
+/* =========================================
+   EFEK ZOOM FOTO PADA KARTU (HOVER)
+   ========================================= */
+/* Memberikan efek transisi yang sangat halus pada foto */
+.teacher-img, 
+.news-img-large, 
+.news-img-small {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Fotonya membesar 10% saat kotaknya disorot mouse */
+.teacher-card:hover .teacher-img,
+.news-highlight:hover .news-img-large,
+.news-item-small:hover .news-img-small {
+  transform: scale(1.1);
 }

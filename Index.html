@@ -182,6 +182,18 @@
       </div>
     </footer>
 
+    <!-- Peta Lokasi -->
+    <div class="map-section" data-aos="fade-up" data-aos-duration="1000">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4435.740277359874!2d112.76353671106015!3d-7.892091192097862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62d4d067c6799%3A0xd0ff2c23ac7ebeb3!2sSMP%20PGRI%20Jabung!5e1!3m2!1sid!2sid!4v1773640077917!5m2!1sid!2sid"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
     <!-- Animasi Header -->
     <script>
       window.addEventListener("scroll", function () {
@@ -199,10 +211,11 @@
 
   <!-- AOS Animation -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // durasi animasi (1 detik)
-      once: true, // animasi hanya jalan sekali saat scroll pertama
-    });
-  </script>
+    <script>
+      AOS.init({ 
+        duration: 1000, 
+        once: false,   /* Mengizinkan animasi diputar berulang kali */
+        mirror: true   /* Memastikan animasi terpicu saat scroll ke atas maupun ke bawah */
+      });
+    </script>
 </html>
