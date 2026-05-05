@@ -948,3 +948,36 @@ header.scrolled .logo-box {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================
+   11. LANGUAGE SWITCHING
+   ========================================= */
+
+/* 1. Sembunyikan Inggris secara default */
+.txt-en {
+  display: none !important;
+}
+
+/* 2. Jika URL mengandung #en, sembunyikan Indo & tampilkan Inggris */
+#en:target ~ * .txt-id {
+  display: none !important;
+}
+
+#en:target ~ * .txt-en {
+  display: inline-block !important; /* Gunakan inline-block atau sesuai kebutuhan */
+}
+
+/* 3. Pastikan jika balik ke #id, tampilannya balik normal */
+#id:target ~ * .txt-en {
+  display: none !important;
+}
+
+#id:target ~ * .txt-id {
+  display: inline-block !important;
+}
+
+#id, #en {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
